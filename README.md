@@ -18,7 +18,7 @@ Quick_qPCR_Analysis.R is an R script that allows for analysis of qPCR using a si
 `install.packages("ggplot2")`
 `install.packages("dplyr")`
 
-# Required Files 
+# Required files 
 A set up txt file with plate position corresponding to sample and primer names. Plate positions are in "Well" column, samples under "Sample" column, and primers under "Primer" column. There are 96 and 384 examples. 
 
 `setUpFile_96_well.txt`
