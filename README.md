@@ -1,6 +1,6 @@
 <p align="center">
   <a>
-    <img width="30%" src="https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/graphic.png" alt="graphic describing Quick_qPCR_analysis.R png">
+    <img width="40%" src="https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/graphic.png" alt="graphic describing Quick_qPCR_analysis.R png">
   </a>
   <h1 align="center">Quick qPCR Analysis</h1>
 </p>
@@ -79,7 +79,7 @@ Also outputs a summary file that shows average ddCT values plotted outputExample
 
 A graph is output showing ddCT values 
 
-<img src='https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/sample_of_interest1_primer_of_interest_control_sample_control_primer_plot.png' width = '50%' alt="graph showing results of Quick_qPCR_analysis.R png">
+<img src='https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/sample_of_interest1_primer_of_interest_control_sample_control_primer_plot.png' width = '100%' alt="graph showing results of Quick_qPCR_analysis.R png">
 
 
 # Running with multiple plates
@@ -151,4 +151,4 @@ The summary stats can then be combined and used to plot multiple samples or prim
 
 `ggsave(file = file.path(output_file_path_argument, file_name_CT))`
 
-<img src='https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/combined_summary_stats.png' width = '50%' alt="graph showing results of Quick_qPCR_analysis_no_arguments.R png">
+<img src='https://github.com/chill3456/Quick_qPCR_Analysis/blob/master/assets/combined_summary_stats.png' width = '100%' alt="graph showing results of Quick_qPCR_analysis_no_arguments.R png">
