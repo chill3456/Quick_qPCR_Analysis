@@ -29,7 +29,7 @@ Set up file can be generated using a .xlsx file that allows you to input sample 
 `platesetup_to_setUpFile_96_well.xlsx`
 `platesetup_to_setUpFile_384_well.xlsx`
 
-It also requires a results txt file with plate position corresponding to CT or CQ values. Plate positions should be in the "Well" column. The example file is from the BioRad platform and when read in the CQ values are read in under the Content Column if CQ or CT values are under different column a different columnn can be specified as an argument. 
+It also requires a results txt file with plate position corresponding to CT or CQ values. Plate positions should be in the "Well" column. The example file is from the BioRad platform and when read in the CQ values are read in under the Content Column if CQ or CT values are under different column a different columnn can be specified after the --CT_value_Column_argument="CT_VALUE_COLUMN". 
 
 `ctResultsFile_96_well.txt`
 `ctResultsFile_384_well.txt`
@@ -37,9 +37,13 @@ It also requires a results txt file with plate position corresponding to CT or C
 
 # Running the script 
 
-The script can be run on the command line. 
+The script can be run on the command line as such with the required arguments. 
 
 `Rscript Quick_qPCR_Analysis.R --ctResultsFilePath=/example_files/ctResultsFile_96_well.txt --setUpFilePath=/example_files/setUpFile_96_well.txt --outputFilePath=/outputExamples --controlSample=control_sample --controlPrimer=control_primer --sampleOfInterest=sample_of_interest1 --primerOfInterest=primer_of_interest"`
+
+You can add an additional column that specifies the CT value column and run the script as below.  
+
+`Rscript Quick_qPCR_Analysis.R --ctResultsFilePath=/example_files/ctResultsFile_96_well.txt --setUpFilePath=/example_files/setUpFile_96_well.txt --outputFilePath=/outputExamples --controlSample=control_sample --controlPrimer=control_primer --sampleOfInterest=sample_of_interest1 --primerOfInterest=primer_of_interest" --CT_value_Column_argument="Content"`
 
 # Outputs
 
